@@ -3,35 +3,37 @@
   margin: 0;
   box-sizing: border-box; }
 
-header .container .nav {
-  background: #17202a;
-  background: #81847d;
-  background: #304154;
-  background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  height: 3.5rem;
-  z-index: 1; }
-  header .container .nav #logo {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    margin: auto; }
-  header .container .nav ul {
-    width: 25%;
-    display: flex; }
-    header .container .nav ul li {
-      display: flex;
-      align-items: center; }
-
-header #welcome-section {
-  background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat fixed center/cover;
+header {
   height: 100%;
   width: 100%; }
+  header .container .nav {
+    background: #17202a;
+    background: #81847d;
+    background: #304154;
+    background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 3.5rem;
+    z-index: 1; }
+    header .container .nav #logo {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      margin: 1.5rem auto; }
+    header .container .nav ul {
+      width: 25%;
+      display: flex; }
+      header .container .nav ul li {
+        display: flex;
+        align-items: center; }
+  header #welcome-section {
+    background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat fixed center/cover;
+    height: 100%;
+    width: 100%; }
 
 #specialty {
   height: 100%;
@@ -43,7 +45,8 @@ header #welcome-section {
     grid-gap: 1.5rem;
     height: 100%;
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 1.5rem auto; }
     #specialty .container .specialtyItems {
       border: 2px dotted red; }
       #specialty .container .specialtyItems i {
@@ -74,7 +77,8 @@ ul {
 
 .border-bottom-short {
   border-bottom: 2px solid darkred;
-  width: 50%; }
+  width: 10%;
+  margin: 0 auto; }
 
 .margin-all {
   margin: 1.5rem; }
@@ -94,7 +98,7 @@ ul {
 #footer {
   color: white;
   background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
-  height: 30vh; }
+  height: 10rem; }
   #footer .container {
     height: 100%;
     margin: auto;
@@ -178,7 +182,3 @@ li > a {
   color: white;
   width: 100%;
   text-align: center; }
-
-img {
-  width: 150px;
-  height: 150px; }

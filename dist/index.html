@@ -25,70 +25,82 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     /> -->
-    <title>Colin Rodney Personal Portfolio</title>
+    <title>Personal Portfolio | Home</title>
   </head>
 
   <body>
-    <header>
+    <header id='header-home'>
       <!-- nav -->
-      <div class="container">
-        <section class="nav" id="navbar">
-            <div id="logo"><p>Colin R. Rodney</p></div>
-            <ul>
-              <li class="current"><a href="#">About</a></li>
-              <li class="current"><a href="#">My Work</a></li>
-              <!-- <li class="current"><a href="#">Github</a></li> -->
-              <li class="current"><a href="#">Contact</a></li>
-            </ul>
-        </section>
-      </div>
-
-      <!-- welcome section and hero image -->
-        <div id="welcome-section">
-          <!-- <img src="img/space.jpg" alt="img"> -->
-          <p>Colin R. Rodney</p>
-          <p>Lets Build Something</p>
+      <div class="container container-margin-auto">
+        <nav class="nav" id="navbar">
+          <p>CR</p>
+          <ul>
+            <li class="current"><a href="#">About</a></li>
+            <li class="current"><a href="#">My Work</a></li>
+            <li class="current"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <div>
+            <h1>Colin R. Rodney</h1>
+            <p class='lead'>Lets Build Something...</p>
+          </div>
         </div>
       </div>
     </header>
+
+      <!-- welcome section and hero image -->
+      <!-- <section id="welcome-section">
+        <div class="container">
+          <img src="img/space.jpg" alt="img">
+          <p>Colin R. Rodney</p>
+          <p>Lets Build Something</p>
+        </div>
+      </section>
+    </header> -->
     <!-- END HEADER -->
 
-    <!-- Specialties -->
-    <section id="specialty">
-      <h2 class='lead text-center margin-all'>My Functional Areas</h2>
-      <div class="border-bottom-short"></div>
-      <div class="container">
-        <div class='specialtyItems'>
-          <i class="fab fa-html5 fa-9x"></i>
-          <p class='text-center lead'>html5</p>
+    <!-- FUNCTIONAL AREAS -->
+      <section id="specialty">
+        <h2 class='lead text-center margin-all'>My Functional Areas</h2>
+        <div class="border-bottom-short"></div>
+        <div class="container">
+          <div class='specialtyItems'>
+            <i class="fab fa-html5 fa-9x"></i>
+            <p class='text-center lead'>html5</p>
+          </div>
+          <div class='specialtyItems'>
+            <i class="fab fa-css3-alt fa-9x"></i>
+            <p class='text-center lead'>css 3</p>
+          </div>
+          <div class='specialtyItems'>
+            <i class="fab fa-js fa-9x"></i>
+            <p class='text-center lead'>javascript</p>
+          </div>
+          <div class='specialtyItems'>
+            <i class="fab fa-bootstrap fa-9x"></i>
+            <p class='text-center lead'>bootstrap</p>
+          </div>
+          <div class='specialtyItems'>
+            <i class="fab fa-sass fa-7x"></i>
+            <p class='text-center lead'>sass</p>
+          </div>       
         </div>
-        <div class='specialtyItems'>
-          <i class="fab fa-css3-alt fa-9x"></i>
-          <p class='text-center lead'>css 3</p>
-        </div>
-        <div class='specialtyItems'>
-          <i class="fab fa-js fa-9x"></i>
-          <p class='text-center lead'>javascript</p>
-        </div>
-        <div class='specialtyItems'>
-          <i class="fab fa-bootstrap fa-9x"></i>
-          <p class='text-center lead'>bootstrap</p>
-        </div>
-        <div class='specialtyItems'>
-          <i class="fas fa-code fa-5x"></i>
-          <p class='text-center lead'>c</p>
-        </div>
-        <div class='specialtyItems'>
-          <i class="fab fa-python fa-9x"></i>
-          <p class='text-center lead'>python</p>
-        </div>
-        <div class='specialtyItems'>
-          <i class="fab fa-sass fa-9x"></i>
-          <p class='text-center lead'>sass</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- <section id="process">
+        <h2 class='lead text-center margin-all'>How I Approach a Problem...</h2>
+        <div class="border-bottom-short"></div>
+        <div class="container">
+          <div class='specialtyItems'>
+            <i class="fab fa-html5 fa-9x"></i>
+            <p class='text-center lead'>html5</p>
+          </div>
+          </div>       
+        </div>
+      </section> -->
+
+      
     <!-- put this on the my work page! -->
     <!-- <section id="projects">
       <div class="container">
@@ -246,38 +258,18 @@
       <div class="projects"></div> -->
     </section>
 
-    <!--FOOTER-->
-    <section id="footer">
-      <div class='container'>
-        <div id="email-address">
-          <p class='lead'>Colin R. Rodney</p>
-          <!-- <i class="fas fa-envelope-open fa-3x"></i> -->
-          <p class='lead'>c.renauld.rodney@gmail.com</p>
-        </div>
-
-        <div class="social">
-          <i class="fas fa-envelope-open fa-3x"></i>
-          <i class="fas fa-envelope-open fa-3x"></i>
-          <i class="fas fa-envelope-open fa-3x"></i>
-        </div>
+    <!--FOOTER -->
+    <footer id="footer">
+      <div id="email-address">
+        <p class='lead'>MidCity Web Design</p>
+        <p>&copy; &nbsp; 2021 All Rights Reserved</p>
       </div>
-      <!-- <div id="email-address">
-        <a
-          href="https://www.github.com/colinrodney/rwd-projects"
-          target="_blank"
-          ><i class="fab fa-github fa-3x"></i>
-          <p>Github</p>
-        </a>
-      </div> -->
-      <!-- <div id="validationLink">
-        <a href="http://jigsaw.w3.org/css-validator/check/referer">
-          <img
-            style="border: 0; width: 88px; height: 31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
-            alt="CSS_validator_Link"
-          />
-        </a>
-      </div> -->
-    </section>
+
+      <div class="social">
+        <i class="fas fa-envelope-open fa-2x"></i>
+        <i class="fas fa-envelope-open fa-2x"></i>
+        <i class="fas fa-envelope-open fa-2x"></i>
+      </div> 
+    </footer> 
   </body>
 </html>

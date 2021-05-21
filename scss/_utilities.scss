@@ -1,0 +1,54 @@
+.container {
+  max-width: $website-width;
+}
+
+// lead paragraph utility
+.lead {
+  font-size: 2rem;
+}
+
+// list item utilities
+ul {
+  list-style-type: none;
+}
+
+// text-alignment utilities
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+// container utilities
+.container-margin-auto {
+  margin: auto;
+}
+
+// border utilities
+.border-bottom-short {
+  border-bottom: 2px solid darkred;
+  width: 50%;
+}
+
+// margin utilities
+.margin-all {
+  margin: 1.5rem;
+}
+.margin-top {
+  margin-top: 1.5rem;
+}
+.margin-right {
+  margin-right: 1.5rem;
+}
+.margin-bottom {
+  margin-bottom: 1.5rem;
+}
+.margin-left {
+  margin-left: 1.5rem;
+}
+
+// padding utilities

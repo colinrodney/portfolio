@@ -1,0 +1,28 @@
+// NAVIGATION COMPNENT
+#header {
+  color: #fff;
+
+  &-home {
+    height: 100vh;
+    background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat center
+      center/cover;
+
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+
+      ul {
+        display: flex;
+      }
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      margin-top: 20%;
+    }
+  }
+}

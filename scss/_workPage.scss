@@ -1,0 +1,100 @@
+// turns background for work page all black
+body#work {
+  background-color: #000;
+}
+
+// work page header elements
+#header {
+  &-work {
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      ul {
+        display: flex;
+
+        // .nav-item {
+        //   margin-right: 2rem;
+        // }
+      }
+    }
+  }
+}
+
+// project section
+#project-section {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  // images in project sections
+  img {
+    width: 300px;
+  }
+
+  // .pro
+}
+
+#footer {
+  position: sticky;
+  margin-top: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
+  height: 10rem;
+
+  .social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+
+    i {
+      border: 1px solid #fff;
+      padding: 0.75rem;
+      border-radius: 50%;
+
+      &:hover {
+        color: darkred;
+      }
+    }
+  }
+}
+
+// #footerSection #email-address {
+//   text-align: center;
+// }
+
+// #footerSection #email-address a {
+//   display: block;
+// }
+
+// #footer-container {
+//   border: 0.75px solid red;
+//   width: 1000px;
+//   height: 100%;
+//   margin: auto;
+//   /* display: grid;
+// 	grid-template-columns: repeat(3, 2fr); */
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: center;
+// }
+
+/*
+The trick to being able to each page to style differently
+using a single stylesheet is that on that specific page and on 
+the specific element needing to have different styling - a
+unique ID MUST be attached to that element.
+
+The element can have classes attached to it as well as
+they would be used to style multiple items at the same 
+time.
+*/

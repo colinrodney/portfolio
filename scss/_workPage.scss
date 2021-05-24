@@ -35,7 +35,11 @@ body#work {
 
   // images in project sections
   img {
-    width: 300px;
+    display: block;
+    width: 100%;
+    height: 12rem;
+    margin: 0 auto;
+    object-fit: cover;
   }
 
   // .pro

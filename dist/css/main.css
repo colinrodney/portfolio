@@ -3,57 +3,6 @@
   margin: 0;
   box-sizing: border-box; }
 
-header {
-  height: 100%;
-  width: 100%; }
-  header .container .nav {
-    background: #17202a;
-    background: #81847d;
-    background: #304154;
-    background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    height: 3.5rem;
-    z-index: 1; }
-    header .container .nav #logo {
-      display: flex;
-      align-items: center;
-      width: 50%;
-      margin: 1.5rem auto; }
-    header .container .nav ul {
-      width: 25%;
-      display: flex; }
-      header .container .nav ul li {
-        display: flex;
-        align-items: center; }
-  header #welcome-section {
-    background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat fixed center/cover;
-    height: 100%;
-    width: 100%; }
-
-#specialty {
-  height: 100%;
-  width: 100%; }
-  #specialty .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 1.5rem;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    margin: 1.5rem auto; }
-    #specialty .container .specialtyItems {
-      border: 2px dotted red; }
-      #specialty .container .specialtyItems i {
-        display: block;
-        width: 50%;
-        margin: auto; }
-
 .container {
   max-width: 1200px; }
 
@@ -95,24 +44,167 @@ ul {
 .margin-left {
   margin-left: 1.5rem; }
 
-#footer {
+#footer-workPage, #footer-contactPage {
+  position: sticky;
+  margin-top: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   color: white;
   background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
   height: 10rem; }
-  #footer .container {
-    height: 100%;
-    margin: auto;
+  #footer-workPage .social, #footer-contactPage .social {
     display: flex;
     justify-content: space-evenly;
-    align-items: center; }
-    #footer .container .social {
+    width: 35%; }
+    #footer-workPage .social i, #footer-contactPage .social i {
+      border: 1px solid #fff;
+      padding: 0.75rem;
+      border-radius: 50%; }
+      #footer-workPage .social i:hover, #footer-contactPage .social i:hover {
+        color: darkred; }
+
+#specialty {
+  color: #000;
+  height: auto;
+  width: 100%;
+  padding: 1.5rem; }
+  #specialty .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin: 1.5rem auto; }
+    #specialty .container .specialtyItems {
+      border: 2px dotted red; }
+      #specialty .container .specialtyItems i {
+        display: block;
+        width: 40%;
+        margin: auto; }
+
+#footer {
+  position: sticky;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
+  height: 10rem; }
+  #footer .social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%; }
+    #footer .social i {
+      border: 1px solid #fff;
+      padding: 0.75rem;
+      border-radius: 50%; }
+      #footer .social i:hover {
+        color: darkred; }
+
+body#work {
+  background-color: #000; }
+
+#header-work .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #header-work .nav ul {
+    display: flex; }
+
+#project-section .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  overflow: hidden;
+  margin: 0 auto; }
+
+#project-section img {
+  display: block;
+  width: 100%;
+  height: 12rem;
+  margin: 0 auto;
+  object-fit: cover; }
+
+#footer {
+  position: sticky;
+  margin-top: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
+  height: 10rem; }
+  #footer .social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%; }
+    #footer .social i {
+      border: 1px solid #fff;
+      padding: 0.75rem;
+      border-radius: 50%; }
+      #footer .social i:hover {
+        color: darkred; }
+
+/*
+The trick to being able to each page to style differently
+using a single stylesheet is that on that specific page and on 
+the specific element needing to have different styling - a
+unique ID MUST be attached to that element.
+
+The element can have classes attached to it as well as
+they would be used to style multiple items at the same 
+time.
+*/
+#contact {
+  background: #000; }
+  #contact-form {
+    margin: 1rem auto; }
+    #contact-form .labels,
+    #contact-form .inputFields {
+      display: block;
+      width: 50%;
+      margin: 1rem auto; }
+      #contact-form .labels .container,
+      #contact-form .inputFields .container {
+        margin: 0 auto; }
+
+#header {
+  color: #fff; }
+  #header-home {
+    height: 100vh;
+    background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat center center/cover; }
+    #header-home #navbar {
       display: flex;
-      justify-content: space-evenly;
-      width: 50%; }
+      justify-content: space-between;
+      align-items: center;
+      height: 2rem; }
+      #header-home #navbar ul {
+        display: flex; }
+    #header-home .header-content {
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      margin-top: 20%; }
+  #header-contact .container {
+    background: #000; }
+    #header-contact .container #navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem; }
+      #header-contact .container #navbar ul {
+        display: flex; }
 
 body {
-  display: flex;
-  flex-direction: column; }
+  min-height: 100%;
+  color: #fff; }
+
+.nav {
+  padding-top: 1.5rem; }
 
 a:hover {
   border-bottom: 0.75px solid #fff; }
@@ -149,28 +241,6 @@ a:hover {
 .projects {
   margin: 0 0.5%; }
 
-#footerSection {
-  color: white;
-  background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
-  height: 30vh; }
-
-#footerSection #email-address {
-  text-align: center; }
-
-#footerSection #email-address a {
-  display: block; }
-
-#footer-container {
-  border: 0.75px solid red;
-  width: 1000px;
-  height: 100%;
-  margin: auto;
-  /* display: grid;
-	grid-template-columns: repeat(3, 2fr); */
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-
 div > a,
 li > a {
   padding: 10px 10px;
@@ -182,3 +252,24 @@ li > a {
   color: white;
   width: 100%;
   text-align: center; }
+
+#specialty {
+  color: #000;
+  height: auto;
+  width: 100%;
+  padding: 1.5rem; }
+  #specialty .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin: 1.5rem auto; }
+    #specialty .container .specialtyItems {
+      border: 2px dotted red; }
+      #specialty .container .specialtyItems i {
+        display: block;
+        width: 40%;
+        margin: auto; }

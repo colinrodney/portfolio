@@ -1,0 +1,21 @@
+#contact {
+  // set color of body background
+  background: #000;
+
+  // contact form styles
+  &-form {
+    // push contact form down + to center
+    margin: 1rem auto;
+
+    .labels,
+    .inputFields {
+      display: block;
+      width: 50%;
+      margin: 1rem auto;
+
+      .container {
+        margin: 0 auto;
+      }
+    }
+  }
+}

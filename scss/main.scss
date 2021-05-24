@@ -1,28 +1,20 @@
 @import "config";
-@import "home";
 @import "utilities";
-@import "footer";
+@import "footer"; // page component
+@import "indexPage";
+@import "workPage";
 @import "contact";
+@import "header-component";
 
 body {
-  display: flex;
-  flex-direction: column;
+  min-height: 100%;
+  color: #fff;
 }
 
-// SEE _nav.scss
-// .nav {
-//   background: #17202a;
-//   background: #81847d;
-//   background: #304154;
-//   background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   display: flex;
-//   justify-content: flex-end;
-//   z-index: 1;
-// }
+// General NAV styles (ALL PAGES)
+.nav {
+  padding-top: 1.5rem;
+}
 
 a:hover {
   border-bottom: 0.75px solid #fff;
@@ -77,31 +69,31 @@ a:hover {
   margin: 0 0.5%;
 }
 
-#footerSection {
-  color: white;
-  background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
-  height: 30vh;
-}
+// #footerSection {
+//   color: white;
+//   background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
+//   height: 30vh;
+// }
 
-#footerSection #email-address {
-  text-align: center;
-}
+// #footerSection #email-address {
+//   text-align: center;
+// }
 
-#footerSection #email-address a {
-  display: block;
-}
+// #footerSection #email-address a {
+//   display: block;
+// }
 
-#footer-container {
-  border: 0.75px solid red;
-  width: 1000px;
-  height: 100%;
-  margin: auto;
-  /* display: grid;
-	grid-template-columns: repeat(3, 2fr); */
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
+// #footer-container {
+//   border: 0.75px solid red;
+//   width: 1000px;
+//   height: 100%;
+//   margin: auto;
+//   /* display: grid;
+// 	grid-template-columns: repeat(3, 2fr); */
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: center;
+// }
 
 div > a,
 li > a {
@@ -121,3 +113,38 @@ li > a {
 //   width: 150px;
 //   height: 150px;
 // }
+
+// INDEX PAGE
+// SPECIALTY / FUNCTIONAL AREAS
+#specialty {
+  color: #000;
+  height: auto;
+  width: 100%;
+  padding: 1.5rem;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin: 1.5rem auto; // added margin to specialty container area
+
+    .specialtyItems {
+      border: 2px dotted red; // for testing purposes
+
+      i {
+        // color: darkred;
+        display: block;
+        width: 40%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+// FOOTERS
+
+// WORK PAGE

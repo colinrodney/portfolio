@@ -102,3 +102,28 @@ The element can have classes attached to it as well as
 they would be used to style multiple items at the same 
 time.
 */
+
+// media query
+@media screen and (max-width: 576px) {
+  #project-section {
+    .container {
+      // display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-gap: 1rem;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    // images in project sections
+    img {
+      display: block;
+      width: 100%;
+      max-height: 50%;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+
+    // .pro
+  }
+}

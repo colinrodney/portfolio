@@ -4,16 +4,29 @@
 @import "indexPage";
 @import "workPage";
 @import "contact";
-@import "header-component";
+@import "aboutPage";
+@import "homePageHeader";
+
+// THIS STYLE SHEET IS FOR UNIVERSAL STYLING TO BE APPLIED THROUGHOUT SITE
 
 body {
   min-height: 100%;
-  color: #fff;
+  // color: #fff;
+  color: #000;
+  background: #fff;
 }
 
 // General NAV styles (ALL PAGES)
-.nav {
-  padding-top: 1.5rem;
+#navbar {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+
+  ul {
+    display: flex;
+  }
 }
 
 a:hover {
@@ -24,28 +37,6 @@ a:hover {
   display: flex;
   justify-content: flex-start;
 }
-
-// body {
-//   height: 100%;
-//   width: 100%;
-// }
-
-.parallaxContainer {
-  background-image: url("https://source.unsplash.com/Q1p7bh3SHj8");
-  background-attachment: fixed;
-  background-color: #000000;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
-
-// header {
-//   height: 100%;
-//   padding: 100px;
-//   color: white;
-// }
 
 #welcome-section {
   display: flex;
@@ -68,32 +59,6 @@ a:hover {
 .projects {
   margin: 0 0.5%;
 }
-
-// #footerSection {
-//   color: white;
-//   background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
-//   height: 30vh;
-// }
-
-// #footerSection #email-address {
-//   text-align: center;
-// }
-
-// #footerSection #email-address a {
-//   display: block;
-// }
-
-// #footer-container {
-//   border: 0.75px solid red;
-//   width: 1000px;
-//   height: 100%;
-//   margin: auto;
-//   /* display: grid;
-// 	grid-template-columns: repeat(3, 2fr); */
-//   display: flex;
-//   justify-content: space-evenly;
-//   align-items: center;
-// }
 
 div > a,
 li > a {
@@ -145,6 +110,23 @@ li > a {
   }
 }
 
-// FOOTERS
+//  import mobile styles / media queries
+@media screen and (max-width: 576px) {
+  #navbar {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
+    height: 2rem;
 
-// WORK PAGE
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        margin: 1rem auto;
+      }
+    }
+  }
+}

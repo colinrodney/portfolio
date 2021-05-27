@@ -1,0 +1,32 @@
+#about {
+  // push about section down from nav bar
+  margin: 3rem;
+
+  & > .container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-gap: 1.5rem;
+    margin: auto;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+    }
+
+    #info {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.5;
+    }
+  }
+}
+
+// .container {
+
+//   // image element
+
+//   #info {
+//   }
+// }

@@ -9,29 +9,46 @@
       center/cover;
 
     .header-content {
-      display: flex;
-      justify-content: center;
-      height: 100vh;
-      margin-top: 20%;
+      color: #fff;
+      // display: flex;
+      // justify-content: center;
+      // height: 100vh;
+      // margin-top: 20%;
     }
   }
+}
 
-  // CONTACT.HTML (NAVBAR)
-  // &-contact {
-  //   .container {
-  //     background: #000;
+// MEDIA QUERIES
+@media screen and (min-width: 280px) {
+  #header {
+    color: #fff;
 
-  //     #navbar {
-  //       display: flex;
-  //       justify-content: space-between;
-  //       align-items: center;
-  //       // height: 2rem;
-  //       padding: 1rem;
+    // INDEX.HTML
+    &-home {
+      height: 100vh;
+      background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat
+        center center/cover;
 
-  //       ul {
-  //         display: flex;
-  //       }
-  //     }
-  //   }
-  // }
+      // .nav {
+      //   background: #000;
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: space-between;
+      //   align-items: center;
+      //   min-height: 10rem;
+
+      //   ul {
+      //     display: flex;
+      //     flex-direction: column;
+      //     justify-content: space-evenly;
+      //     min-height: inherit;
+      //   }
+      // }
+
+      .header-content {
+        margin: 50% 0 0 1rem;
+        text-align: left;
+      }
+    }
+  }
 }

@@ -1,32 +1,57 @@
-#about {
-  // push about section down from nav bar
-  margin: 3rem;
+@media screen and (min-width: 200px) {
+  #about {
+    // push about section down from nav bar
+    margin: 3rem;
 
-  & > .container {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-gap: 1.5rem;
-    margin: auto;
-    overflow: hidden;
+    & > .container {
+      display: grid;
+      // grid-template-columns: 50% auto;
+      grid-gap: 1.5rem;
+      margin: auto;
+      overflow: hidden;
 
-    img {
-      max-width: 100%;
+      img {
+        max-width: 100%;
+      }
+
+      #info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.5;
+      }
     }
+  }
 
-    #info {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: center;
-      line-height: 1.5;
+  // specialty
+  #specialty {
+    color: #000;
+    height: auto;
+    width: 100%;
+    padding: 1.5rem;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-gap: 1.5rem;
+      height: auto;
+      width: 100%;
+      overflow: hidden;
+      margin: 1.5rem auto; // added margin to specialty container area
+
+      .specialtyItems {
+        border: 2px dotted red; // for testing purposes
+
+        i {
+          // color: darkred;
+          display: block;
+          width: 40%;
+          margin: auto;
+          text-align: center;
+        }
+      }
     }
   }
 }
-
-// .container {
-
-//   // image element
-
-//   #info {
-//   }
-// }

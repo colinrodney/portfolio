@@ -64,6 +64,28 @@ ul {
       #footer-workPage .social i:hover, #footer-contactPage .social i:hover {
         color: darkred; }
 
+@media screen and (max-width: 576px) {
+  #footer {
+    position: sticky;
+    margin-top: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
+    min-height: 30rem; }
+    #footer .social {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      #footer .social i {
+        border: 1px solid #fff;
+        padding: 0.75rem;
+        border-radius: 50%; }
+        #footer .social i:hover {
+          color: darkred; } }
+
 #specialty {
   color: #000;
   height: auto;
@@ -103,6 +125,19 @@ ul {
       border-radius: 50%; }
       #footer .social i:hover {
         color: darkred; }
+
+#workflow {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  text-align: center; }
+  #workflow .steps {
+    margin: 3rem auto;
+    max-width: 20rem;
+    padding: 1.5rem; }
+    #workflow .steps .lead {
+      font-size: 2rem;
+      margin: 1.5rem 0; }
 
 body#work {
   background-color: #000; }
@@ -159,52 +194,123 @@ The element can have classes attached to it as well as
 they would be used to style multiple items at the same 
 time.
 */
-#contact {
-  background: #000; }
-  #contact-form {
-    margin: 1rem auto; }
-    #contact-form .labels,
-    #contact-form .inputFields {
-      display: block;
-      width: 50%;
-      margin: 1rem auto; }
-      #contact-form .labels .container,
-      #contact-form .inputFields .container {
-        margin: 0 auto; }
+@media screen and (max-width: 576px) {
+  #project-section .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    overflow: hidden;
+    margin: 0 auto; }
+  #project-section img {
+    display: block;
+    width: 100%;
+    max-height: 50%;
+    margin: 0 auto;
+    object-fit: cover; } }
+
+#contact .container {
+  margin-top: 1.5rem; }
+
+#contact-form {
+  margin: 1rem auto; }
+  #contact-form .labels {
+    display: block;
+    width: 50%;
+    margin: 1.5rem auto 0.5rem auto; }
+  #contact-form .inputFields {
+    display: block;
+    width: 50%;
+    margin: auto;
+    height: 2.5rem; }
+  #contact-form textarea {
+    display: block;
+    width: 50%;
+    margin: auto; }
+
+@media screen and (min-width: 200px) {
+  #about {
+    margin: 3rem; }
+    #about > .container {
+      display: grid;
+      grid-gap: 1.5rem;
+      margin: auto;
+      overflow: hidden; }
+      #about > .container img {
+        max-width: 100%; }
+      #about > .container #info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.5; }
+  #specialty {
+    color: #000;
+    height: auto;
+    width: 100%;
+    padding: 1.5rem; }
+    #specialty .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-gap: 1.5rem;
+      height: auto;
+      width: 100%;
+      overflow: hidden;
+      margin: 1.5rem auto; }
+      #specialty .container .specialtyItems {
+        border: 2px dotted red; }
+        #specialty .container .specialtyItems i {
+          display: block;
+          width: 40%;
+          margin: auto;
+          text-align: center; } }
 
 #header {
   color: #fff; }
   #header-home {
     height: 100vh;
     background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat center center/cover; }
-    #header-home #navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 2rem; }
-      #header-home #navbar ul {
-        display: flex; }
     #header-home .header-content {
-      display: flex;
-      justify-content: center;
-      height: 100vh;
-      margin-top: 20%; }
-  #header-contact .container {
-    background: #000; }
-    #header-contact .container #navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem; }
-      #header-contact .container #navbar ul {
-        display: flex; }
+      color: #fff; }
 
+@media screen and (min-width: 280px) {
+  #header {
+    color: #fff; }
+    #header-home {
+      height: 100vh;
+      background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat center center/cover; }
+      #header-home .header-content {
+        margin: 50% 0 0 1rem;
+        text-align: left; } }
+
+/*THIS STYLE SHEET IS FOR GLOBAL STYLES APPLIED THROUGHOUT SITE*/
 body {
   min-height: 100%;
-  color: #fff; }
+  color: #000;
+  background: #fff; }
 
 .nav {
-  padding-top: 1.5rem; }
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 2rem; }
+  .nav ul {
+    display: flex; }
+
+@media screen and (min-width: 200px) {
+  .nav {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10rem; }
+    .nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      min-height: inherit; } }
 
 a:hover {
   border-bottom: 0.75px solid #fff; }
@@ -212,16 +318,6 @@ a:hover {
 #brand {
   display: flex;
   justify-content: flex-start; }
-
-.parallaxContainer {
-  background-image: url("https://source.unsplash.com/Q1p7bh3SHj8");
-  background-attachment: fixed;
-  background-color: #000000;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%; }
 
 #welcome-section {
   display: flex;
@@ -252,24 +348,3 @@ li > a {
   color: white;
   width: 100%;
   text-align: center; }
-
-#specialty {
-  color: #000;
-  height: auto;
-  width: 100%;
-  padding: 1.5rem; }
-  #specialty .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 1.5rem;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    margin: 1.5rem auto; }
-    #specialty .container .specialtyItems {
-      border: 2px dotted red; }
-      #specialty .container .specialtyItems i {
-        display: block;
-        width: 40%;
-        margin: auto; }

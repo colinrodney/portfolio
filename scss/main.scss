@@ -12,8 +12,8 @@
 body {
   min-height: 100%;
   // color: #fff;
-  color: #000; // this will need to change to white on some pages
-  background: #fff; // this needs to change to black!!
+  color: #fff; // this will need to change to white on some pages
+  background: #000; // this needs to change to black!!
 }
 
 // General NAV styles (ALL PAGES)
@@ -43,6 +43,17 @@ body {
       flex-direction: column;
       justify-content: space-evenly;
       min-height: inherit;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    flex-direction: initial;
+
+    ul {
+      flex-direction: initial;
+      align-items: center;
     }
   }
 }

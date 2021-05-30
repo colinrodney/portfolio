@@ -1,11 +1,12 @@
-@media screen and (min-width: 200px) {
+@media (min-width: 200px) {
+  // id about
   #about {
     // push about section down from nav bar
     margin: 3rem;
 
-    & > .container {
+    .container {
       display: grid;
-      // grid-template-columns: 50% auto;
+      grid-template-columns: auto; //--- starts @ larger screen size...
       grid-gap: 1.5rem;
       margin: auto;
       overflow: hidden;
@@ -24,9 +25,9 @@
     }
   }
 
-  // specialty
+  // specialty section
   #specialty {
-    color: #000;
+    color: #fff;
     height: auto;
     width: 100%;
     padding: 1.5rem;
@@ -35,7 +36,7 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
-      grid-gap: 1.5rem;
+      grid-gap: 2.5rem;
       height: auto;
       width: 100%;
       overflow: hidden;
@@ -45,10 +46,35 @@
         border: 2px dotted red; // for testing purposes
 
         i {
-          // color: darkred;
           display: block;
-          width: 40%;
-          margin: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #about {
+    // push about section down from nav bar
+    margin: 3rem;
+
+    .container {
+      //creates 2 column grid layout
+      grid-template-columns: 50% auto;
+    }
+  }
+
+  #specialty {
+    .container {
+      // creates multi column layout
+      grid-template-columns: repeat(4, 1fr);
+
+      .specialtyItems {
+        border: 2px dotted red; // for testing purposes
+
+        i {
+          display: block;
           text-align: center;
         }
       }

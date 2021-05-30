@@ -86,27 +86,6 @@ ul {
         #footer .social i:hover {
           color: darkred; } }
 
-#specialty {
-  color: #000;
-  height: auto;
-  width: 100%;
-  padding: 1.5rem; }
-  #specialty .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 1.5rem;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    margin: 1.5rem auto; }
-    #specialty .container .specialtyItems {
-      border: 2px dotted red; }
-      #specialty .container .specialtyItems i {
-        display: block;
-        width: 40%;
-        margin: auto; }
-
 #footer {
   position: sticky;
   display: flex;
@@ -138,9 +117,6 @@ ul {
     #workflow .steps .lead {
       font-size: 2rem;
       margin: 1.5rem 0; }
-
-body#work {
-  background-color: #000; }
 
 #header-work .nav {
   display: flex;
@@ -213,6 +189,8 @@ time.
 
 #contact-form {
   margin: 1rem auto; }
+  #contact-form .container {
+    margin: auto; }
   #contact-form .labels {
     display: block;
     width: 50%;
@@ -227,24 +205,25 @@ time.
     width: 50%;
     margin: auto; }
 
-@media screen and (min-width: 200px) {
+@media (min-width: 200px) {
   #about {
     margin: 3rem; }
-    #about > .container {
+    #about .container {
       display: grid;
+      grid-template-columns: auto;
       grid-gap: 1.5rem;
       margin: auto;
       overflow: hidden; }
-      #about > .container img {
+      #about .container img {
         max-width: 100%; }
-      #about > .container #info {
+      #about .container #info {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
         line-height: 1.5; }
   #specialty {
-    color: #000;
+    color: #fff;
     height: auto;
     width: 100%;
     padding: 1.5rem; }
@@ -252,7 +231,7 @@ time.
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: auto;
-      grid-gap: 1.5rem;
+      grid-gap: 2.5rem;
       height: auto;
       width: 100%;
       overflow: hidden;
@@ -261,9 +240,20 @@ time.
         border: 2px dotted red; }
         #specialty .container .specialtyItems i {
           display: block;
-          width: 40%;
-          margin: auto;
           text-align: center; } }
+
+@media (min-width: 992px) {
+  #about {
+    margin: 3rem; }
+    #about .container {
+      grid-template-columns: 50% auto; }
+  #specialty .container {
+    grid-template-columns: repeat(4, 1fr); }
+    #specialty .container .specialtyItems {
+      border: 2px dotted red; }
+      #specialty .container .specialtyItems i {
+        display: block;
+        text-align: center; } }
 
 #header {
   color: #fff; }
@@ -286,8 +276,8 @@ time.
 /*THIS STYLE SHEET IS FOR GLOBAL STYLES APPLIED THROUGHOUT SITE*/
 body {
   min-height: 100%;
-  color: #000;
-  background: #fff; }
+  color: #fff;
+  background: #000; }
 
 .nav {
   background: #000;
@@ -311,6 +301,13 @@ body {
       flex-direction: column;
       justify-content: space-evenly;
       min-height: inherit; } }
+
+@media screen and (min-width: 768px) {
+  .nav {
+    flex-direction: initial; }
+    .nav ul {
+      flex-direction: initial;
+      align-items: center; } }
 
 a:hover {
   border-bottom: 0.75px solid #fff; }

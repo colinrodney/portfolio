@@ -1,33 +1,3 @@
-// SPECIALTY / FUNCTIONAL AREAS
-#specialty {
-  color: #000;
-  height: auto;
-  width: 100%;
-  padding: 1.5rem;
-
-  .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 1.5rem;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    margin: 1.5rem auto; // added margin to specialty container area
-
-    .specialtyItems {
-      border: 2px dotted red; // for testing purposes
-
-      i {
-        // color: darkred;
-        display: block;
-        width: 40%;
-        margin: auto;
-      }
-    }
-  }
-}
-
 // FOOTER
 #footer {
   position: sticky;

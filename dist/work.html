@@ -30,16 +30,32 @@
 
   <body>
     <section id="header-work">
-      <div class="container container-margin-auto">
+      <input type="checkbox" class="nav-toggle" id="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span>X</span>
+      </label>
+      <!-- <h1 class='logo'>CR</h1> -->
+      <nav id="navbar" class="nav">
+        <h1 class="logo">CR</h1>
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li class="current"><a href="about.html">About</a></li>
+          <li class="current"><a href="work.html">My Work</a></li>
+          <li class="current"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- <div class="container container-margin-auto">
         <nav class="nav" id="navbar">
-          <p class="lead">C. Renauld Rodney</p>
+          <a href="index.html">
+            <p class="lead logo">CR</p>
+          </a>
           <ul>
-            <li class="current nav-item"><a href="#">About</a></li>
-            <li class="current nav-item"><a href="#">My Work</a></li>
-            <li class="current nav-item"><a href="#">Contact</a></li>
+            <li class="current nav-item"><a href="about.html">About</a></li>
+            <li class="current nav-item"><a href="work.html">My Work</a></li>
+            <li class="current nav-item"><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-      </div>
+      </div> -->
     </section>
 
     <!-- PROJECTS / MY WORK -->
@@ -138,7 +154,7 @@
 
     <!--FOOTER -->
     <footer id="footer">
-      <div id="email-address">
+      <div>
         <p class="lead">MidCity Web Design</p>
         <p>&copy; &nbsp; 2021 All Rights Reserved</p>
       </div>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import "config";
 @import "utilities";
 @import "footer"; // page component
@@ -9,96 +10,113 @@
 
 /*THIS STYLE SHEET IS FOR GLOBAL STYLES APPLIED THROUGHOUT SITE*/
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// HYPERLINKS
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 body {
-  min-height: 100%;
-  // color: #fff;
+  font-family: "Montserrat", sans-serif;
   color: #fff; // this will need to change to white on some pages
   background: #000; // this needs to change to black!!
 }
 
 // General NAV styles (ALL PAGES)
-.nav {
-  background: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 2rem;
+// navigation bar;
+
+// hide nav-toggle checkbox
+.nav-toggle {
+  visibility: hidden;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  margin-left: 1rem;
+  // font-size: 1.5rem;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 0, 0, 0.5);
+  text-align: left;
+  width: 100%;
+  min-height: 20rem;
+  // DEFAULT: hide navigation on mobile devices
+  display: none;
+
+  .logo {
+    display: none;
+  }
 
   ul {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: inherit;
+    // margin-right: 5%;
+  }
+
+  // a {
+  //   text-decoration: none;
+  //   color: #fff;
+  // }
+
+  a:hover {
+    border-bottom: 2px solid #fff;
   }
 }
-@media screen and (min-width: 200px) {
-  // navigation bar
-  .nav {
-    background: #000;
+
+// Show navigation on mobile devices when toggle is checked
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+
+// larger screens
+@media screen and (min-width: 768px) {
+  //  adjust lead paragraph font size @ larger screens
+  // hide nav toggle and nav toggle label @ lg screens
+  .nav-toggle,
+  .nav-toggle-label {
+    display: none;
+  }
+
+  nav {
+    position: fixed;
+    top: 0; // PROBLEM??
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 10rem;
+    padding: 1.5rem;
+    min-height: 5rem;
 
-    ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      min-height: inherit;
+    .logo {
+      display: block;
     }
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .nav {
-    flex-direction: initial;
+    // h1 {
+    //   margin-left: 5%;
+    // }
 
     ul {
       flex-direction: initial;
       align-items: center;
+      min-width: 30%;
     }
   }
+
+  // .nav-toggle:checked ~ #navbar {
+  //   background: darkred;
+  // }
 }
 
-a:hover {
-  border-bottom: 0.75px solid #fff;
-}
-
-#brand {
-  display: flex;
-  justify-content: flex-start;
-}
-
-#welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#projects {
-  background: #b7b7af;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#projects a {
-  text-decoration: none;
-}
-
-.projects {
-  margin: 0 0.5%;
-}
-
-div > a,
-li > a {
-  padding: 10px 10px;
-  /*border: thin solid white;*/
-  color: white;
-  text-decoration: none;
-}
-
-.ASCIIspan {
-  color: white;
-  width: 100%;
-  text-align: center;
-}
+//

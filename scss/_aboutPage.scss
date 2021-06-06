@@ -1,63 +1,69 @@
-@media (min-width: 200px) {
-  // id about
-  #about {
-    // push about section down from nav bar
-    margin: 3rem;
+// id about
+#about {
+  // push about section down from nav bar
+  margin: 22rem 1.5rem;
 
-    .container {
-      display: grid;
-      grid-template-columns: auto; //--- starts @ larger screen size...
-      grid-gap: 1.5rem;
-      margin: auto;
-      overflow: hidden;
+  .container {
+    display: grid;
+    grid-template-columns: auto; //--- starts @ larger screen size...
+    grid-gap: 1.5rem;
+    margin: auto;
+    overflow: hidden;
 
-      img {
-        max-width: 100%;
-      }
+    img {
+      max-width: 100%;
+    }
 
-      #info {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        line-height: 1.5;
-      }
+    #info {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.5;
     }
   }
+}
 
-  // specialty section
-  #specialty {
-    color: #fff;
+// specialty section
+#specialty {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  height: auto;
+  width: 100%;
+  padding: 1.5rem;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5rem;
     height: auto;
     width: 100%;
-    padding: 1.5rem;
+    overflow: hidden;
+    margin: 1.5rem auto; // added margin to specialty container area
+    text-align: center;
 
-    .container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-gap: 2.5rem;
-      height: auto;
-      width: 100%;
-      overflow: hidden;
-      margin: 1.5rem auto; // added margin to specialty container area
+    .specialtyItems {
+      // text-align: center;
+      border: 2px dotted red; // for testing purposes
+      margin: 3rem 0;
+      grid-gap: 3.5rem;
 
-      .specialtyItems {
-        border: 2px dotted red; // for testing purposes
-
-        i {
-          display: block;
-          text-align: center;
-        }
+      i {
+        display: block;
+        text-align: center;
       }
     }
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #about {
     // push about section down from nav bar
-    margin: 3rem;
+    margin: 12rem 2rem;
 
     .container {
       //creates 2 column grid layout

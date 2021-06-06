@@ -31,72 +31,78 @@
   <body>
     <section id="header-contact">
       <!-- SECTION: Navigation Bar -->
-      <div class="container container-margin-auto">
-        <nav class="nav" id="navbar">
-          <p class="lead">C. Renauld Rodney</p>
-          <ul>
-            <li class="current nav-item"><a href="#">About</a></li>
-            <li class="current nav-item"><a href="#">My Work</a></li>
-            <li class="current nav-item"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <input type="checkbox" class="nav-toggle" id="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span>X</span>
+      </label>
+      <!-- <h1 class='logo'>CR</h1> -->
+      <nav id="navbar" class="nav">
+        <h1 class="logo">CR</h1>
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li class="current"><a href="about.html">About</a></li>
+          <li class="current"><a href="work.html">My Work</a></li>
+          <li class="current"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </section>
 
     <!-- SECTION: CONTACT ME -->
     <section id="contact-form">
       <h1 class="text-center">Lets start your project!</h1>
-      <div class="container">
-        <form action="#">
-          <label for="firstName" class="labels">First Name</label>
-          <input
-            class="inputFields"
-            type="text"
-            id="firstName"
-            placeholder="First Name"
-          />
+      <form action="#">
+        <label for="firstName" class="labels">First Name</label>
+        <input
+          class="inputFields"
+          type="text"
+          id="firstName"
+          placeholder="First Name"
+        />
 
-          <label for="LastName" class="labels">Last Name</label>
-          <input
-            class="inputFields"
-            type="text"
-            id="LastName"
-            placeholder="Last Name"
-          />
+        <label for="LastName" class="labels">Last Name</label>
+        <input
+          class="inputFields"
+          type="text"
+          id="LastName"
+          placeholder="Last Name"
+        />
 
-          <label for="eMail" class="labels">eMail</label>
-          <input
-            class="inputFields"
-            type="text"
-            id="eMail"
-            placeholder="Email Address"
-          />
+        <label for="eMail" class="labels">eMail</label>
+        <input
+          class="inputFields"
+          type="text"
+          id="eMail"
+          placeholder="Email Address"
+        />
 
-          <label for="contactNumber" class="labels">Phone Number</label>
-          <input
-            class="inputFields"
-            type="text"
-            id="contactNumber"
-            placeholder="something..."
-          />
+        <label for="contactNumber" class="labels">Phone Number</label>
+        <input
+          class="inputFields"
+          type="text"
+          id="contactNumber"
+          placeholder="something..."
+        />
 
-          <label for="projectDescription" class="labels"
-            >Describe Your Project</label
-          >
-          <textarea
-            name="projectDescription"
-            id="projectDescription"
-            cols="30"
-            rows="10"
-            placeholder="Brief description of your project"
-          ></textarea>
-        </form>
-      </div>
+        <label for="projectDescription" class="labels"
+          >Describe Your Project</label
+        >
+        <textarea
+          name="projectDescription"
+          id="projectDescription"
+          cols="30"
+          rows="10"
+          placeholder="Brief description of your project"
+        ></textarea>
+      </form>
+      <!-- <div class="container">
+      </div> -->
     </section>
+    <!-- submit button -->
+    <button type="submit">Lets Build Something</button>
 
     <!--FOOTER -->
     <footer id="footer">
-      <div id="email-address">
+      <div>
         <p class="lead">MidCity Web Design</p>
         <p>&copy; &nbsp; 2021 All Rights Reserved</p>
       </div>

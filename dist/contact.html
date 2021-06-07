@@ -50,9 +50,15 @@
     <!-- SECTION: CONTACT ME -->
     <section id="contact-form">
       <h1 class="text-center">Lets start your project!</h1>
-      <form action="#">
+      <form
+        action="#"
+        method="POST"
+        data-netlify="true"
+        name="project-initial-contact"
+      >
         <label for="firstName" class="labels">First Name</label>
         <input
+          name="first-name"
           class="inputFields"
           type="text"
           id="firstName"
@@ -61,6 +67,7 @@
 
         <label for="LastName" class="labels">Last Name</label>
         <input
+          name="last-name"
           class="inputFields"
           type="text"
           id="LastName"
@@ -69,6 +76,7 @@
 
         <label for="eMail" class="labels">eMail</label>
         <input
+          name="e-mail"
           class="inputFields"
           type="text"
           id="eMail"
@@ -77,6 +85,7 @@
 
         <label for="contactNumber" class="labels">Phone Number</label>
         <input
+          name="contact-number"
           class="inputFields"
           type="text"
           id="contactNumber"
@@ -93,12 +102,14 @@
           rows="10"
           placeholder="Brief description of your project"
         ></textarea>
+
+        <!-- Recaptcha CHallenge -->
+        <div data-netlify-recaptcha="true"></div>
+
+        <!-- submit button -->
+        <button type="submit">Lets Build Something</button>
       </form>
-      <!-- <div class="container">
-      </div> -->
     </section>
-    <!-- submit button -->
-    <button type="submit">Lets Build Something</button>
 
     <!--FOOTER -->
     <footer id="footer">

@@ -40,6 +40,11 @@
 
 @media (min-width: 768px) {
   .header-content {
-    font-size: 2rem;
+    .lead {
+      font-size: 3rem;
+    }
+    .tagline {
+      font-size: 2rem;
+    }
   }
 }

@@ -273,7 +273,9 @@ button {
       font-size: 1.3rem; }
 
 @media (min-width: 768px) {
-  .header-content {
+  .header-content .lead {
+    font-size: 3rem; }
+  .header-content .tagline {
     font-size: 2rem; } }
 
 /*THIS STYLE SHEET IS FOR GLOBAL STYLES APPLIED THROUGHOUT SITE*/
@@ -326,7 +328,6 @@ nav {
   .nav-toggle-label {
     display: none; }
   nav {
-    position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;

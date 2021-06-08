@@ -29,7 +29,8 @@
       border-radius: 50%;
 
       &:hover {
-        color: lightgray;
+        background-color: lightgray;
+        color: darkred;
       }
     }
   }

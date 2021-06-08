@@ -15,9 +15,6 @@
   }
 }
 
-// MEDIA QUERIES
-// @media screen and (min-width: 280px) {
-// }
 #header {
   .container {
     text-align: center;
@@ -31,20 +28,30 @@
       center/cover;
 
     .header-content {
-      margin: 25rem 0 0 1rem;
+      margin: 12rem 0 0 1rem;
       text-align: center;
       font-size: 1.3rem;
     }
   }
 }
 
-@media (min-width: 768px) {
-  .header-content {
-    .lead {
-      font-size: 3rem;
-    }
-    .tagline {
-      font-size: 2rem;
+// @media (min-width: 768px) {
+//   .lead {
+//     font-size: 3rem;
+//   }
+//   .tagline {
+//     font-size: 2rem;
+//   }
+// }
+
+//  LANDSCAPE: width > height
+
+@media (min-width: 600px) {
+  #header {
+    &-home {
+      .header-content {
+        margin-top: 6rem;
+      }
     }
   }
 }

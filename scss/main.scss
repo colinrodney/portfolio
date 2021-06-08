@@ -29,7 +29,7 @@ body {
 }
 
 // General NAV styles (ALL PAGES)
-// navigation bar;
+//NAVIGATION BAR
 
 // hide nav-toggle checkbox
 .nav-toggle {
@@ -39,7 +39,8 @@ body {
 .nav-toggle-label {
   position: absolute;
   top: 5px;
-  left: 0;
+  left: 5px;
+  font-size: 1.5rem;
   margin-left: 1rem;
   // font-size: 1.5rem;
 }
@@ -49,7 +50,7 @@ nav {
   width: 100%;
   background: rgba(255, 0, 0, 0.5);
   text-align: left;
-  width: 100%;
+  // width: 100%;
   min-height: 20rem;
   // DEFAULT: hide navigation on mobile devices
   display: none;
@@ -64,25 +65,25 @@ nav {
     justify-content: space-evenly;
     min-height: inherit;
     // margin-right: 5%;
+    min-width: 40%;
   }
-
-  // a {
-  //   text-decoration: none;
-  //   color: #fff;
-  // }
 
   a:hover {
     border-bottom: 2px solid #fff;
   }
 }
 
-// Show navigation on mobile devices when toggle is checked
+//SHOW NAV WHEN TOGGLE IS CHECKED
 .nav-toggle:checked ~ nav {
   display: block;
 }
 
-// larger screens
-@media screen and (min-width: 768px) {
+// .nav-toggle:checked ~ .header-content {
+//   margin: 20rem 0 0 1rem;
+// }
+
+// LARGE SCREEN STYLES
+@media (min-width: 768px) {
   //  adjust lead paragraph font size @ larger screens
   // hide nav toggle and nav toggle label @ lg screens
   .nav-toggle,
@@ -91,8 +92,8 @@ nav {
   }
 
   nav {
-    // position: fixed;
-    top: 0; // PROBLEM??
+    position: absolute;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,7 +111,7 @@ nav {
     ul {
       flex-direction: initial;
       align-items: center;
-      min-width: 30%;
+      min-width: 50%;
     }
   }
 

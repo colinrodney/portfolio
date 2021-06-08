@@ -2,27 +2,13 @@
 #header {
   color: #fff;
 
-  // INDEX.HTML
-  &-home {
-    text-align: center;
-    height: 100vh;
-    background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat center
-      center/cover;
-
-    .header-content {
-      color: #fff;
-    }
-  }
-}
-
-#header {
   .container {
     text-align: center;
   }
-  color: #fff;
 
   // INDEX.HTML
   &-home {
+    text-align: center;
     height: 100vh;
     background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat center
       center/cover;
@@ -35,6 +21,8 @@
   }
 }
 
+//
+
 // @media (min-width: 768px) {
 //   .lead {
 //     font-size: 3rem;
@@ -46,11 +34,16 @@
 
 //  LANDSCAPE: width > height
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   #header {
     &-home {
       .header-content {
-        margin-top: 6rem;
+        margin-top: 24rem;
+
+        .lead,
+        .tagline {
+          font-size: 3rem;
+        }
       }
     }
   }

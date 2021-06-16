@@ -60,13 +60,18 @@ nav {
   }
 
   ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-evenly;
     min-height: inherit;
     // margin-right: 5%;
     min-width: 40%;
-    margin-left: 1rem;
+    margin: 5rem 0 0 1rem;
+    // margin-left: 1rem;
+
+    li.current {
+      margin-bottom: 1.5rem;
+    }
   }
 
   a:hover {

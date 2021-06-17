@@ -332,7 +332,8 @@ nav {
     top: 0;
     min-height: 3rem; }
     nav .logo {
-      display: block; }
+      display: block;
+      margin: 50% 0 0 10%; }
     nav ul {
       margin-left: auto;
       display: grid;

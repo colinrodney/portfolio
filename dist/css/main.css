@@ -313,7 +313,6 @@ nav {
     min-width: 40%;
     margin: 5rem 0 0 1rem; }
     nav ul .current {
-      background: lightblue;
       margin-bottom: 1.5rem;
       margin-left: 1rem; }
   nav a:hover {

@@ -326,16 +326,15 @@ nav {
   .nav-toggle-label {
     display: none; }
   nav {
+    display: grid;
+    grid-template-columns: 100px auto;
     position: absolute;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    min-height: 5rem; }
+    min-height: 3rem; }
     nav .logo {
       display: block; }
     nav ul {
-      flex-direction: initial;
-      align-items: center;
-      min-width: 50%; } }
+      margin-left: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      min-width: 40%; } }

@@ -305,7 +305,16 @@ body {
     background: #fff;
     height: 2px;
     width: 2rem;
-    border-radius: 2px; }
+    border-radius: 2px;
+    position: relative; }
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: "";
+    position: absolute; }
+  .nav-toggle-label span::before {
+    bottom: 5px; }
+  .nav-toggle-label span::after {
+    top: 5px; }
 
 nav {
   position: absolute;

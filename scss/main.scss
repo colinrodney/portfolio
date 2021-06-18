@@ -52,6 +52,21 @@ body {
     height: 2px;
     width: 2rem;
     border-radius: 2px;
+    position: relative;
+  }
+
+  span::before,
+  span::after {
+    content: "";
+    position: absolute;
+  }
+
+  span::before {
+    bottom: 5px;
+  }
+
+  span::after {
+    top: 5px;
   }
 }
 

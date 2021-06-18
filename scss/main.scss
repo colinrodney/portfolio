@@ -104,15 +104,15 @@ nav {
 
   nav {
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-auto-flow: column;
     position: absolute;
     top: 0;
     // padding: 1.5rem;
-    min-height: 3rem;
+    min-height: 5rem;
 
     .logo {
       display: block;
-      margin: 50% 0 0 10%; //top right bottom left
+      margin: 30% 0 0 10%; //top right bottom left
     }
 
     // h1 {
@@ -122,8 +122,9 @@ nav {
     ul {
       margin-left: auto;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      min-width: 40%;
+      grid-auto-flow: column;
+      min-width: 50%;
+      margin: 2rem 0 0 auto; //top right bottom left
     }
   }
 

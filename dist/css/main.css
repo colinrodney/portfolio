@@ -294,10 +294,7 @@ body {
 
 .nav-toggle-label {
   position: absolute;
-  top: 5px;
-  left: 5px;
-  font-size: 1.5rem;
-  margin-left: 1rem; }
+  left: 1rem; }
   .nav-toggle-label span,
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
@@ -306,15 +303,16 @@ body {
     height: 2px;
     width: 2rem;
     border-radius: 2px;
-    position: relative; }
+    position: relative;
+    margin: 1rem; }
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
     content: "";
     position: absolute; }
   .nav-toggle-label span::before {
-    bottom: 5px; }
+    bottom: 7px; }
   .nav-toggle-label span::after {
-    top: 5px; }
+    top: 7px; }
 
 nav {
   position: absolute;

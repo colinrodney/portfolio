@@ -338,5 +338,4 @@ nav {
       margin-left: auto;
       display: grid;
       grid-auto-flow: column;
-      min-width: 50%;
-      margin: 2rem 0 0 auto; } }
+      min-width: 50%; } }

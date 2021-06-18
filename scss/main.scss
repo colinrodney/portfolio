@@ -38,11 +38,7 @@ body {
 
 .nav-toggle-label {
   position: absolute;
-  top: 5px;
-  left: 5px;
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  // font-size: 1.5rem;
+  left: 1rem;
 
   span,
   span::before,
@@ -53,6 +49,7 @@ body {
     width: 2rem;
     border-radius: 2px;
     position: relative;
+    margin: 1rem; // this may cause a problem...
   }
 
   span::before,
@@ -62,11 +59,11 @@ body {
   }
 
   span::before {
-    bottom: 5px;
+    bottom: 7px;
   }
 
   span::after {
-    top: 5px;
+    top: 7px;
   }
 }
 

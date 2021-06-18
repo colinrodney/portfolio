@@ -81,6 +81,7 @@ nav {
 }
 
 //SHOW NAV WHEN TOGGLE IS CHECKED
+
 .nav-toggle:checked ~ nav {
   display: block;
 }

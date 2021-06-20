@@ -44,45 +44,36 @@ body {
 
 // LARGE SCREEN STYLES
 @media (min-width: 768px) {
-  //  adjust lead paragraph font size @ larger screens
   // hide nav toggle and nav toggle label @ lg screens
-  .nav-toggle,
-  .nav-toggle-label {
-    display: none;
-  }
+
+  // .nav-toggle,
+  // .nav-toggle-label {
+  //   display: none;
+  // }
 
   // nav {
+  //   display: flex;
+  //   overflow: hidden;
+  //   position: absolute;
+  //   top: 0;
+  //   height: 10rem;
 
-  // }
+  //   .logo {
+  //     display: flex;
+  //     align-items: center;
+  //     margin: 0 0 0 1rem; // top right bottom left
+  //   }
 
-  nav {
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    height: 10rem;
-
-    .logo {
-      display: flex;
-      align-items: center;
-      margin: 0 0 0 1rem; // top right bottom left
-    }
-
-    // h1 {
-    //   margin-left: 5%;
-    // }
-
-    ul {
-      margin-left: auto;
-      display: grid;
-      grid-auto-flow: column;
-      min-width: 50%;
-    }
-  }
-
-  // .nav-toggle:checked ~ #navbar {
-  //   background: darkred;
-  // }
+  //   ul {
+  //     margin-left: auto;
+  //     display: grid;
+  //     grid-auto-flow: column;
+  //     min-width: 50%;
+  //   }
 }
+
+// .nav-toggle:checked ~ #navbar {
+//   background: darkred;
+// }
 
 //

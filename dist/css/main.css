@@ -79,6 +79,26 @@ ul {
       justify-content: space-evenly;
       width: 70%; } }
 
+#header {
+  color: #fff; }
+  #header .container {
+    text-align: center; }
+  #header-home {
+    text-align: center;
+    height: 100vh;
+    background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat center center/cover; }
+    #header-home .header-content {
+      margin: 12rem 0 0 1rem;
+      text-align: center;
+      font-size: 1.3rem; }
+
+@media (min-width: 768px) {
+  #header-home .header-content {
+    margin-top: 24rem; }
+    #header-home .header-content .lead,
+    #header-home .header-content .tagline {
+      font-size: 3rem; } }
+
 .lead {
   font-size: 2rem; }
 
@@ -113,6 +133,63 @@ ul {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto;
       grid-gap: 5rem; } }
+
+#about {
+  margin: 22rem 1.5rem; }
+  #about .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1.5rem;
+    margin: auto;
+    overflow: hidden; }
+    #about .container img {
+      max-width: 100%; }
+    #about .container #info {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.5; }
+
+#specialty {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  height: auto;
+  width: 100%;
+  padding: 1.5rem; }
+  #specialty .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5rem;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin: 1.5rem auto;
+    text-align: center; }
+    #specialty .container .specialtyItems {
+      border: 2px dotted red;
+      margin: 3rem 0;
+      grid-gap: 3.5rem; }
+      #specialty .container .specialtyItems i {
+        display: block;
+        text-align: center; }
+
+@media (min-width: 768px) {
+  #about {
+    margin: 12rem 2rem; }
+    #about .container {
+      grid-template-columns: 50% auto; }
+  #specialty .container {
+    grid-template-columns: repeat(4, 1fr); }
+    #specialty .container .specialtyItems {
+      border: 2px dotted red; }
+      #specialty .container .specialtyItems i {
+        display: block;
+        text-align: center; } }
 
 #header-work .nav {
   display: flex;
@@ -197,83 +274,6 @@ button {
   button {
     font-size: 2rem; } }
 
-#about {
-  margin: 22rem 1.5rem; }
-  #about .container {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 1.5rem;
-    margin: auto;
-    overflow: hidden; }
-    #about .container img {
-      max-width: 100%; }
-    #about .container #info {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: center;
-      line-height: 1.5; }
-
-#specialty {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  background: rgba(255, 255, 255, 0.5);
-  color: #fff;
-  height: auto;
-  width: 100%;
-  padding: 1.5rem; }
-  #specialty .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 5rem;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    margin: 1.5rem auto;
-    text-align: center; }
-    #specialty .container .specialtyItems {
-      border: 2px dotted red;
-      margin: 3rem 0;
-      grid-gap: 3.5rem; }
-      #specialty .container .specialtyItems i {
-        display: block;
-        text-align: center; }
-
-@media (min-width: 768px) {
-  #about {
-    margin: 12rem 2rem; }
-    #about .container {
-      grid-template-columns: 50% auto; }
-  #specialty .container {
-    grid-template-columns: repeat(4, 1fr); }
-    #specialty .container .specialtyItems {
-      border: 2px dotted red; }
-      #specialty .container .specialtyItems i {
-        display: block;
-        text-align: center; } }
-
-#header {
-  color: #fff; }
-  #header .container {
-    text-align: center; }
-  #header-home {
-    text-align: center;
-    height: 100vh;
-    background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat center center/cover; }
-    #header-home .header-content {
-      margin: 12rem 0 0 1rem;
-      text-align: center;
-      font-size: 1.3rem; }
-
-@media (min-width: 768px) {
-  #header-home .header-content {
-    margin-top: 24rem; }
-    #header-home .header-content .lead,
-    #header-home .header-content .tagline {
-      font-size: 3rem; } }
-
 /*THIS STYLE SHEET IS FOR GLOBAL STYLES APPLIED THROUGHOUT SITE*/
 * {
   box-sizing: border-box;
@@ -288,54 +288,6 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   background: #000; }
-
-.nav-toggle {
-  visibility: hidden; }
-
-.nav-toggle-label {
-  position: absolute;
-  left: 1rem;
-  top: 1.5rem;
-  z-index: 100; }
-  .nav-toggle-label span,
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-    display: block;
-    background: #fff;
-    height: 2px;
-    width: 2rem;
-    border-radius: 2px;
-    position: relative; }
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-    content: "";
-    position: absolute; }
-  .nav-toggle-label span::before {
-    bottom: 7px; }
-  .nav-toggle-label span::after {
-    top: 7px; }
-
-nav {
-  position: absolute;
-  width: 100%;
-  background: rgba(255, 0, 0, 0.5);
-  text-align: left;
-  min-height: 10rem;
-  display: none; }
-  nav .logo {
-    display: none; }
-  nav ul {
-    min-height: inherit;
-    min-width: 40%;
-    margin: 5rem 0 0 1rem; }
-    nav ul .current {
-      margin-bottom: 1.5rem;
-      margin-left: 1rem; }
-  nav a:hover {
-    border-bottom: 2px solid #fff; }
-
-.nav-toggle:checked ~ nav {
-  display: block; }
 
 @media (min-width: 768px) {
   .nav-toggle,

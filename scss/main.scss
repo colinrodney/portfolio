@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import "config";
 @import "utilities";
-@import "footer"; // page component
+
+//PAGE COMPONENTS
+@import "navbar";
+@import "footer";
+@import "homePageHeader";
+
+// SITE PAGES
 @import "indexPage";
+@import "aboutPage";
 @import "workPage";
 @import "contact";
-@import "aboutPage";
-@import "homePageHeader";
 
 /*THIS STYLE SHEET IS FOR GLOBAL STYLES APPLIED THROUGHOUT SITE*/
 
@@ -32,82 +37,6 @@ body {
 //NAVIGATION BAR
 
 // hide nav-toggle checkbox
-.nav-toggle {
-  visibility: hidden;
-}
-
-.nav-toggle-label {
-  position: absolute;
-  left: 1rem;
-  top: 1.5rem;
-  z-index: 100;
-
-  span,
-  span::before,
-  span::after {
-    display: block;
-    background: #fff;
-    height: 2px;
-    width: 2rem;
-    border-radius: 2px;
-    position: relative;
-  }
-
-  span::before,
-  span::after {
-    content: "";
-    position: absolute;
-  }
-
-  span::before {
-    bottom: 7px;
-  }
-
-  span::after {
-    top: 7px;
-  }
-}
-
-nav {
-  position: absolute;
-  width: 100%;
-  background: rgba(255, 0, 0, 0.5);
-  text-align: left;
-  // width: 100%;
-  min-height: 10rem;
-  // DEFAULT: hide navigation on mobile devices
-  display: none;
-
-  .logo {
-    display: none;
-  }
-
-  ul {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-evenly;
-    min-height: inherit;
-    // margin-right: 5%;
-    min-width: 40%;
-    margin: 5rem 0 0 1rem;
-    // margin-left: 1rem;
-
-    .current {
-      margin-bottom: 1.5rem;
-      margin-left: 1rem;
-    }
-  }
-
-  a:hover {
-    border-bottom: 2px solid #fff;
-  }
-}
-
-//SHOW NAV WHEN TOGGLE IS CHECKED
-
-.nav-toggle:checked ~ nav {
-  display: block;
-}
 
 // .nav-toggle:checked ~ .header-content {
 //   margin: 20rem 0 0 1rem;

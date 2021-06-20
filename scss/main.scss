@@ -73,7 +73,6 @@ nav {
   width: 100%;
   background: rgba(255, 0, 0, 0.5);
   text-align: left;
-  // width: 100%;
   min-height: 10rem;
   // DEFAULT: hide navigation on mobile devices
   display: none;
@@ -83,9 +82,9 @@ nav {
   }
 
   ul {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     min-height: inherit;
     // margin-right: 5%;
     min-width: 40%;
@@ -139,9 +138,7 @@ nav {
       margin: 0 0 0 1rem; // top right bottom left
     }
 
-    // h1 {
-    //   margin-left: 5%;
-    // }
+   
 
     ul {
       margin-left: auto;
@@ -150,10 +147,5 @@ nav {
       min-width: 50%;
     }
   }
-
-  // .nav-toggle:checked ~ #navbar {
-  //   background: darkred;
-  // }
 }
 
-//

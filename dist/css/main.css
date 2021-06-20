@@ -316,6 +316,10 @@ time.
     width: 75%;
     margin: auto;
     min-height: 30%; }
+  #contact-form div {
+    margin: 2rem 0; }
+    #contact-form div .g-recaptcha div {
+      margin: 0 auto; }
 
 button {
   display: block;

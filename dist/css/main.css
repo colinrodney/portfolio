@@ -42,6 +42,71 @@ ul {
 .margin-left {
   margin-left: 1.5rem; }
 
+.nav-toggle {
+  visibility: hidden; }
+
+.nav-toggle-label {
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  z-index: 100; }
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    display: block;
+    background: #fff;
+    height: 2px;
+    width: 2rem;
+    border-radius: 2px;
+    position: relative; }
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: "";
+    position: absolute; }
+  .nav-toggle-label span::before {
+    bottom: 7px; }
+  .nav-toggle-label span::after {
+    top: 7px; }
+
+nav {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 0, 0, 0.5);
+  text-align: left;
+  min-height: 10rem;
+  display: none; }
+  nav .logo {
+    display: none; }
+  nav ul {
+    min-height: inherit;
+    min-width: 40%;
+    margin: 5rem 0 0 1rem; }
+    nav ul .current {
+      margin-bottom: 1.5rem;
+      margin-left: 1rem; }
+  nav a:hover {
+    border-bottom: 2px solid #fff; }
+
+@media (min-width: 768px) {
+  .nav-toggle,
+  .nav-toggle-label {
+    display: none; }
+  nav {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    height: 10rem; }
+    nav .logo {
+      display: flex;
+      align-items: center;
+      margin: 0 0 0 1rem; }
+    nav ul {
+      margin-left: auto;
+      display: grid;
+      grid-auto-flow: column;
+      min-width: 50%; } }
+
 #footer {
   position: sticky;
   display: flex;
@@ -191,13 +256,6 @@ ul {
         display: block;
         text-align: center; } }
 
-#header-work .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  #header-work .nav ul {
-    display: flex; }
-
 #project-section {
   margin-top: 22rem; }
   #project-section .lead {
@@ -288,23 +346,3 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   background: #000; }
-
-@media (min-width: 768px) {
-  .nav-toggle,
-  .nav-toggle-label {
-    display: none; }
-  nav {
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    height: 10rem; }
-    nav .logo {
-      display: flex;
-      align-items: center;
-      margin: 0 0 0 1rem; }
-    nav ul {
-      margin-left: auto;
-      display: grid;
-      grid-auto-flow: column;
-      min-width: 50%; } }

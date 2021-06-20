@@ -1,0 +1,102 @@
+// General NAV styles (ALL PAGES)
+
+//NAVIGATION BAR (Mobile Devices)
+
+// hide nav-toggle checkbox
+.nav-toggle {
+  visibility: hidden;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  z-index: 100;
+
+  span,
+  span::before,
+  span::after {
+    display: block;
+    background: #fff;
+    height: 2px;
+    width: 2rem;
+    border-radius: 2px;
+    position: relative;
+  }
+
+  span::before,
+  span::after {
+    content: "";
+    position: absolute;
+  }
+
+  span::before {
+    bottom: 7px;
+  }
+
+  span::after {
+    top: 7px;
+  }
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  background: rgba(255, 0, 0, 0.5);
+  text-align: left;
+  min-height: 10rem;
+  // DEFAULT: hide navigation on mobile devices
+  display: none;
+
+  .logo {
+    display: none;
+  }
+
+  ul {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-evenly;
+    min-height: inherit;
+    min-width: 40%;
+    margin: 5rem 0 0 1rem;
+
+    .current {
+      margin-bottom: 1.5rem;
+      margin-left: 1rem;
+    }
+  }
+
+  a:hover {
+    border-bottom: 2px solid #fff;
+  }
+}
+
+// MEDIA QUERY
+@media (min-width: 768px) {
+  // hide nav toggle and nav toggle label @ lg screens
+  .nav-toggle,
+  .nav-toggle-label {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    height: 10rem;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin: 0 0 0 1rem; // top right bottom left
+    }
+
+    ul {
+      margin-left: auto;
+      display: grid;
+      grid-auto-flow: column;
+      min-width: 50%;
+    }
+  }
+}

@@ -45,6 +45,9 @@ ul {
 .nav-toggle {
   visibility: hidden; }
 
+.nav-toggle:checked ~ nav {
+  display: block; }
+
 .nav-toggle-label {
   position: absolute;
   left: 1rem;

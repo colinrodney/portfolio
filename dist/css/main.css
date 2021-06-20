@@ -298,7 +298,7 @@ they would be used to style multiple items at the same
 time.
 */
 #contact-form {
-  margin: 12rem auto 3rem auto;
+  margin: 8rem auto 3rem auto;
   line-height: 2.5rem; }
   #contact-form .container {
     margin: auto; }
@@ -329,6 +329,8 @@ button {
     color: #fff; }
 
 @media (min-width: 768px) {
+  #contact-form {
+    margin: 12rem auto 3rem auto; }
   .labels,
   .inputFields {
     width: 50%; }

@@ -2,7 +2,7 @@
 #contact {
   &-form {
     // push contact form down + to center
-    margin: 12rem auto 3rem auto;
+    margin: 8rem auto 3rem auto;
     line-height: 2.5rem;
 
     .container {
@@ -46,6 +46,12 @@ button {
 }
 
 @media (min-width: 768px) {
+  #contact {
+    &-form {
+      margin: 12rem auto 3rem auto; // top right bottom left
+    }
+  }
+
   .labels,
   .inputFields {
     width: 50%;

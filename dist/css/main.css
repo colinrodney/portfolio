@@ -180,19 +180,18 @@ nav {
 .header-content {
   margin-top: 70%; }
 
-@media (max-width: 768px) {
-  #workflow {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 2rem;
-    text-align: center; }
-    #workflow .steps {
-      margin: 3rem auto;
-      max-width: 20rem;
-      padding: 1.5rem; }
-      #workflow .steps .lead {
-        font-size: 2rem;
-        margin: 1.5rem 0; } }
+#workflow {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+  text-align: center; }
+  #workflow .steps {
+    margin: 3rem auto;
+    max-width: 20rem;
+    padding: 1.5rem; }
+    #workflow .steps .lead {
+      font-size: 2rem;
+      margin: 1.5rem 0; }
 
 @media (min-width: 768px) {
   #workflow {

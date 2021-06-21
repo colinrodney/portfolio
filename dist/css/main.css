@@ -187,8 +187,7 @@ nav {
   background: #5a5050; }
   #workflow .steps {
     margin: 3rem auto;
-    max-width: 20rem;
-    padding: 1.5rem; }
+    max-width: 20rem; }
     #workflow .steps .lead {
       font-size: 2rem;
       margin: 1.5rem 0; }

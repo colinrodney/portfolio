@@ -46,7 +46,8 @@ ul {
   visibility: hidden; }
 
 .nav-toggle:checked ~ nav {
-  display: block; }
+  display: block;
+  background: rgba(58, 56, 56, 0.7); }
 
 .nav-toggle-label {
   position: absolute;

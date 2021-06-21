@@ -10,6 +10,7 @@
 // display nav as block element when toggle clicked
 .nav-toggle:checked ~ nav {
   display: block;
+  background: rgba(58, 56, 56, 0.7);
 }
 
 .nav-toggle-label {

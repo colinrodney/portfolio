@@ -142,7 +142,8 @@ nav {
 @media (min-width: 768px) {
   #footer {
     display: flex;
-    flex-direction: initial; }
+    flex-direction: initial;
+    padding-top: initial; }
     #footer .social {
       flex-direction: initial;
       justify-content: space-evenly;

@@ -15,14 +15,11 @@
   }
 }
 
-@media (max-width: 768px) {
-}
-
-// WORKFLOW SECTION
+// WORKFLOW SECTION (Mobile Devices)
 #workflow {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 2rem;
+  // margin-top: 2rem;
   text-align: center;
   background: rgb(90, 80, 80);
 
@@ -39,6 +36,7 @@
   }
 }
 
+// Media Query (Larger Screens)
 @media (min-width: 768px) {
   #workflow {
     padding: 2.5rem;
@@ -47,7 +45,7 @@
     grid-template-rows: auto;
     grid-gap: 3.5rem;
     text-align: center;
-    margin-top: 5rem;
+    // margin-top: 5rem;
 
     .container {
       text-align: center;

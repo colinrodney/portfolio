@@ -183,7 +183,6 @@ nav {
 #workflow {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 2rem;
   text-align: center;
   background: #5a5050; }
   #workflow .steps {
@@ -201,8 +200,7 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 3.5rem;
-    text-align: center;
-    margin-top: 5rem; }
+    text-align: center; }
     #workflow .container {
       text-align: center;
       display: grid;

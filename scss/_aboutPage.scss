@@ -35,11 +35,15 @@
   width: 100%;
   padding: 1.5rem;
 
+  .border-bottom-short {
+    margin: 0 auto 1rem; //top left/right bottom
+  }
+
   .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-gap: 5rem;
+    grid-gap: 4rem;
     height: auto;
     width: 100%;
     overflow: hidden;
@@ -47,11 +51,6 @@
     text-align: center;
 
     .specialtyItems {
-      // text-align: center;
-      border: 2px dotted red; // for testing purposes
-      margin: 3rem 0;
-      grid-gap: 3.5rem;
-
       i {
         display: block;
         text-align: center;
@@ -60,6 +59,7 @@
   }
 }
 
+// MEDIA QUERIES
 @media (min-width: 768px) {
   #about {
     // push about section down from nav bar
@@ -77,8 +77,6 @@
       grid-template-columns: repeat(4, 1fr);
 
       .specialtyItems {
-        border: 2px dotted red; // for testing purposes
-
         i {
           display: block;
           text-align: center;

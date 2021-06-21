@@ -192,12 +192,14 @@ nav {
 
 @media (min-width: 768px) {
   #workflow {
+    background: #5a5050;
     padding: 2.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     grid-gap: 3.5rem;
     text-align: center;
-    margin-top: 10rem; }
+    margin-top: 5rem; }
     #workflow .container {
       text-align: center;
       display: grid;

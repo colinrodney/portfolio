@@ -184,7 +184,8 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 2rem;
-  text-align: center; }
+  text-align: center;
+  background: #5a5050; }
   #workflow .steps {
     margin: 3rem auto;
     max-width: 20rem;
@@ -195,7 +196,6 @@ nav {
 
 @media (min-width: 768px) {
   #workflow {
-    background: #5a5050;
     padding: 2.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -170,7 +170,11 @@ nav {
     #header-home .header-content .tagline {
       font-size: 3rem; } }
 
+.fas {
+  margin: 0 0 2rem 0; }
+
 .lead {
+  margin: 0 0 2rem 0;
   font-size: 2rem; }
 
 .header-content {

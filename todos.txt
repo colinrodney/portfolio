@@ -1,6 +1,8 @@
 TODOs: 6/22/2021
 
-1. Make sure all projects are hosted via github pages.
+
+1. Make sure all projects are hosted via github pages. **DONE
+
 
 Projects still hosted @ codepen:
   > Tribute Page (old design)
@@ -8,6 +10,7 @@ Projects still hosted @ codepen:
   > Tribute Page - Not linking anywhere...???
   > Technical Documentation Page - Not linking anywhere...???
 
-2. Make sure all projects link properly and correctly.
+2. Make sure all projects link properly and correctly. **DONE
 
-3. Make sure all pages can link back to the portfolio and/ or can link to contact form.
+3. Make sure all pages can link back to the portfolio and/ or can link to contact form. [work in progress]
+>>>>>>> todo.txt

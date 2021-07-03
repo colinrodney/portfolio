@@ -73,25 +73,25 @@ nav {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  position: absolute;
+  position: fixed;
+  /* top: 0; */
+  bottom: 0%;
   width: 100%;
   background: rgba(255, 0, 0, 0.5);
   /* text-align: left; */
   height: 5rem;
-  /* display: none; */ }
+  /* display: none; */
+  z-index: 100; }
   nav .logo {
     display: none; }
   nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     /* align-items: center; */
     /* min-height: inherit; */
-    width: 100%;
-    margin: 3rem 0 0 1rem;
-    padding-bottom: 0.5rem; }
+    width: 100%; }
     nav ul .current {
-      margin-bottom: 1.5rem;
-      margin-left: 1rem; }
+      padding-bottom: 0.5rem; }
   nav a:hover {
     border-bottom: 2px solid #fff; }
 

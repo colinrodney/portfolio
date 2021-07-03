@@ -91,7 +91,12 @@ nav {
     /* min-height: inherit; */
     width: 100%; }
     nav ul .current {
+      text-align: center;
       padding-bottom: 0.5rem; }
+  nav .fas {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.75rem 0; }
   nav a:hover {
     border-bottom: 2px solid #fff; }
 

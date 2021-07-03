@@ -14,10 +14,11 @@
 }
 
 .nav-toggle-label {
-  position: absolute;
-  left: 1rem;
-  top: 1.5rem;
-  z-index: 100;
+  display: none; // TESTING
+  // position: absolute;
+  // left: 1rem;
+  // top: 1.5rem;
+  // z-index: 100;
 
   span,
   span::before,
@@ -46,13 +47,26 @@
 }
 
 nav {
-  position: absolute;
+  // position: absolute;
+  // width: 100%;
+  // background: rgba(255, 0, 0, 0.5);
+  // // text-align: left;
+  // min-height: 10rem;
+  // // DEFAULT: hide navigation on mobile devices
+  // display: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: fixed;
+  /* top: 0; */
+  bottom: 0%;
   width: 100%;
   background: rgba(255, 0, 0, 0.5);
-  text-align: left;
-  min-height: 10rem;
-  // DEFAULT: hide navigation on mobile devices
-  display: none;
+  /* text-align: left; */
+  height: 5rem;
+  /* display: none; */
+  z-index: 100;
 
   .logo {
     display: none;
@@ -62,13 +76,22 @@ nav {
     // display: flex;
     // flex-direction: column;
     // justify-content: space-evenly;
-    min-height: inherit;
-    min-width: 40%;
-    margin: 5rem 0 0 1rem;
+    // min-height: inherit;
+    // min-width: 40%;
+    // margin: 5rem 0 0 1rem;
+
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* min-height: inherit; */
+    width: 100%;
+    // margin: 3rem 0 0 1rem;
+    // padding-bottom: 0.5rem;
 
     .current {
-      margin-bottom: 1.5rem;
-      margin-left: 1rem;
+      // margin-bottom: 1.5rem;
+      // margin-left: 1rem;
+      padding-bottom: 0.5rem;
     }
   }
 
@@ -86,11 +109,21 @@ nav {
   }
 
   nav {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // overflow: hidden;
+    // position: absolute;
+    // top: 0;
+    // height: 10rem;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
-    height: 10rem;
+    height: 6rem;
 
     .logo {
       display: flex;
@@ -99,10 +132,15 @@ nav {
     }
 
     ul {
-      margin-left: auto;
-      display: grid;
-      grid-auto-flow: column;
-      min-width: 50%;
+      // margin-left: auto;
+      // display: grid;
+      // grid-auto-flow: column;
+      // min-width: 50%;
+
+      display: flex;
+      margin: 0 0 0 auto; // top right bottom left
+      align-items: center;
+      width: 50%;
     }
   }
 }

@@ -62,7 +62,8 @@ nav {
   /* top: 0; */
   bottom: 0%;
   width: 100%;
-  background: rgba(255, 0, 0, 0.5);
+  // background: rgba(255, 0, 0, 0.5);
+  background: hsl(240, 10%, 30%);
   /* text-align: left; */
   height: 5rem;
   /* display: none; */
@@ -124,6 +125,7 @@ nav {
     // top: 0;
     // height: 10rem;
 
+    background: rgba(255, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -133,7 +133,7 @@ nav {
   background: linear-gradient(45deg, #a1aab3, #48596c, #090d11);
   background: darkred;
   min-height: 20rem;
-  padding-top: 2rem; }
+  padding: 2.5rem 0; }
   #footer div {
     text-align: center; }
   #footer .social {

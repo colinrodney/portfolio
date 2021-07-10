@@ -189,6 +189,11 @@ nav {
 .header-content {
   margin-top: 70%; }
 
+.wrapper {
+  background: #5a5050;
+  text-align: center;
+  padding: 1.5rem; }
+
 #workflow {
   display: grid;
   grid-template-columns: 1fr;

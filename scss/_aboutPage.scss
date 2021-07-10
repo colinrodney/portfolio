@@ -1,7 +1,10 @@
+header {
+  text-align: center;
+}
 // id about
 #about {
   // push about section down from nav bar
-  margin: 5rem 1.5rem;
+  margin: 1.5rem;
 
   .container {
     display: grid;
@@ -20,6 +23,10 @@
       flex-direction: column;
       justify-content: center;
       line-height: 1.5;
+
+      p {
+        margin-bottom: 1.5rem;
+      }
     }
   }
 }

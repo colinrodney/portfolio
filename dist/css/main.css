@@ -318,10 +318,12 @@ they would be used to style multiple items at the same
 time.
 */
 #contact-form {
-  margin: 8rem auto 3rem auto;
+  margin: 1.5rem auto 3rem auto;
   line-height: 2.5rem; }
   #contact-form .container {
     margin: auto; }
+  #contact-form form {
+    background: #5a5050; }
   #contact-form .labels {
     display: block;
     width: 75%;
@@ -330,12 +332,17 @@ time.
     display: block;
     width: 75%;
     margin: auto;
-    height: 3.5rem; }
+    height: 3.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    padding: 1rem; }
   #contact-form textarea {
     display: block;
     width: 75%;
     margin: auto;
-    min-height: 30%; }
+    min-height: 30%;
+    font-size: 1rem;
+    padding: 1rem; }
   #contact-form div {
     margin: 2rem 0; }
     #contact-form div .g-recaptcha div {
@@ -343,11 +350,13 @@ time.
 
 button {
   display: block;
-  width: 75%;
+  width: 45%;
   min-height: 10%;
   margin: 0 auto 3rem;
   font-size: 1.2rem;
-  cursor: pointer; }
+  cursor: pointer;
+  background: #ad2828;
+  color: #fff; }
   button:hover {
     background: #4f87d1;
     color: #fff; }

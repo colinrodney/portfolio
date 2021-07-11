@@ -323,7 +323,8 @@ time.
   #contact-form .container {
     margin: auto; }
   #contact-form form {
-    background: #5a5050; }
+    background: #5a5050;
+    padding-bottom: 0.5rem; }
   #contact-form .labels {
     display: block;
     width: 75%;

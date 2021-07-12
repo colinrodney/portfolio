@@ -2,71 +2,19 @@
 
 //NAVIGATION BAR (Mobile Devices)
 
-// hide nav-toggle checkbox
-.nav-toggle {
-  visibility: hidden;
-}
-
-// display nav as block element when toggle clicked
-.nav-toggle:checked ~ nav {
-  display: block;
-  background: rgba(58, 56, 56, 0.7);
-}
-
-.nav-toggle-label {
-  display: none; // TESTING
-  // position: absolute;
-  // left: 1rem;
-  // top: 1.5rem;
-  // z-index: 100;
-
-  span,
-  span::before,
-  span::after {
-    display: block;
-    background: #fff;
-    height: 2px;
-    width: 2rem;
-    border-radius: 2px;
-    position: relative;
-  }
-
-  span::before,
-  span::after {
-    content: "";
-    position: absolute;
-  }
-
-  span::before {
-    bottom: 7px;
-  }
-
-  span::after {
-    top: 7px;
-  }
-}
-
 nav {
-  // position: absolute;
-  // width: 100%;
-  // background: rgba(255, 0, 0, 0.5);
-  // // text-align: left;
-  // min-height: 10rem;
-  // // DEFAULT: hide navigation on mobile devices
-  // display: none;
-
   display: flex;
   justify-content: center;
   align-items: flex-end;
   position: fixed;
-  /* top: 0; */
+
   bottom: 0%;
   width: 100%;
-  // background: rgba(255, 0, 0, 0.5);
+
   background: hsl(240, 10%, 30%);
-  /* text-align: left; */
+
   height: 5rem;
-  /* display: none; */
+
   z-index: 100;
 
   .logo {
@@ -74,24 +22,12 @@ nav {
   }
 
   ul {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-evenly;
-    // min-height: inherit;
-    // min-width: 40%;
-    // margin: 5rem 0 0 1rem;
-
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
-    /* min-height: inherit; */
+
     width: 100%;
-    // margin: 3rem 0 0 1rem;
-    // padding-bottom: 0.5rem;
 
     .current {
-      // margin-bottom: 1.5rem;
-      // margin-left: 1rem;
       text-align: center;
       padding-bottom: 0.5rem;
     }
@@ -117,15 +53,7 @@ nav {
   }
 
   nav {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // overflow: hidden;
-    // position: absolute;
-    // top: 0;
-    // height: 10rem;
-
-    background: rgba(255, 0, 0, 0.5);
+    background: inherit; //inherit body background color
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,11 +69,6 @@ nav {
     }
 
     ul {
-      // margin-left: auto;
-      // display: grid;
-      // grid-auto-flow: column;
-      // min-width: 50%;
-
       display: flex;
       margin: 0 0 0 auto; // top right bottom left
       align-items: center;

@@ -15,6 +15,11 @@
   }
 }
 
+#about > h1 {
+  text-align: center;
+  margin: 2rem auto;
+}
+
 .wrapper {
   background: #5a5050;
   text-align: center;
@@ -32,6 +37,7 @@
   .steps {
     margin: 3rem auto;
     max-width: 20rem;
+    padding: 1.5rem;
 
     // steps info paragraph
     .lead {

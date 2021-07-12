@@ -136,16 +136,23 @@ nav {
     text-align: center; }
   #header-home {
     text-align: center;
-    height: 100vh;
-    background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat center center/cover; }
+    background-image: url("https://source.unsplash.com/Q1p7bh3SHj8");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
     #header-home .header-content {
-      margin: 12rem 0 0 1rem;
-      text-align: center;
-      font-size: 1.3rem; }
+      min-width: 70%;
+      margin: 45% 0 0 1.5rem;
+      text-align: left;
+      font-size: 1.3rem;
+      border-left: 0.5rem solid red;
+      padding-left: 1rem; }
 
 @media (min-width: 768px) {
   #header-home .header-content {
-    margin-top: 24rem; }
+    margin: 20% 0 0 3%; }
     #header-home .header-content .lead,
     #header-home .header-content .tagline {
       font-size: 3rem; } }

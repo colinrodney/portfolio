@@ -42,53 +42,21 @@ ul {
 .margin-left {
   margin-left: 1.5rem; }
 
-.nav-toggle {
-  visibility: hidden; }
-
-.nav-toggle:checked ~ nav {
-  display: block;
-  background: rgba(58, 56, 56, 0.7); }
-
-.nav-toggle-label {
-  display: none; }
-  .nav-toggle-label span,
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-    display: block;
-    background: #fff;
-    height: 2px;
-    width: 2rem;
-    border-radius: 2px;
-    position: relative; }
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-    content: "";
-    position: absolute; }
-  .nav-toggle-label span::before {
-    bottom: 7px; }
-  .nav-toggle-label span::after {
-    top: 7px; }
-
 nav {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   position: fixed;
-  /* top: 0; */
   bottom: 0%;
   width: 100%;
   background: #454554;
-  /* text-align: left; */
   height: 5rem;
-  /* display: none; */
   z-index: 100; }
   nav .logo {
     display: none; }
   nav ul {
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
-    /* min-height: inherit; */
     width: 100%; }
     nav ul .current {
       text-align: center;
@@ -105,7 +73,7 @@ nav {
   .nav-toggle-label {
     display: none; }
   nav {
-    background: rgba(255, 0, 0, 0.5);
+    background: inherit;
     display: flex;
     align-items: center;
     justify-content: center;

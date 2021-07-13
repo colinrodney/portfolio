@@ -291,14 +291,12 @@ header {
     object-fit: cover; }
 
 @media (min-width: 768px) {
-  #project-section {
-    margin-top: 11rem; }
-    #project-section .lead {
-      font-size: 2rem; }
-    #project-section .container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto; } }
+  #project-section .lead {
+    font-size: 2rem; }
+  #project-section .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; } }
 
 /*
 The trick to being able to each page to style differently

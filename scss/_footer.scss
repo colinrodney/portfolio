@@ -9,6 +9,7 @@
   padding: 1rem;
 
   ul {
+    margin: 1rem 0 0 1rem;
     padding: 0.5rem;
 
     li {
@@ -31,6 +32,11 @@
     display: flex;
     flex-direction: initial;
     padding-top: initial;
+
+    ul {
+      margin: 3rem 0 0 1.5rem;
+      font-size: 1.3rem;
+    }
 
     .social {
       // display: flex;

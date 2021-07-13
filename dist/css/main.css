@@ -349,7 +349,8 @@ button {
   font-size: 1.2rem;
   cursor: pointer;
   background: #ad2828;
-  color: #fff; }
+  color: #fff;
+  padding: 10px; }
   button:hover {
     background: #4f87d1;
     color: #fff; }

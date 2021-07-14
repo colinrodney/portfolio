@@ -143,22 +143,18 @@ nav {
   #header .container {
     text-align: center; }
   #header-home {
-    text-align: center;
-    min-height: 100%; }
+    position: relative; }
     #header-home .hero {
-      width: 100%; }
+      width: 100%;
+      height: 100%; }
     #header-home img {
       width: 100%; }
     #header-home .header-content {
-      min-width: 70%;
-      margin: 40% 0 0 1.5rem;
+      position: absolute;
+      top: 35%;
+      left: 10%;
       text-align: left;
       font-size: 1.3rem; }
-      #header-home .header-content div {
-        position: relative;
-        top: 5rem;
-        border-left: 0.5rem solid red;
-        padding-left: 1rem; }
 
 @media (min-width: 560px) {
   #header-home .header-content {
@@ -179,9 +175,6 @@ nav {
 .lead {
   margin: 0 0 2rem 0;
   font-size: 2rem; }
-
-.header-content {
-  margin-top: 70%; }
 
 #about > h1 {
   text-align: center;

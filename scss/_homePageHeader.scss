@@ -8,49 +8,30 @@
 
   // INDEX.HTML
   &-home {
+    position: relative;
+
     // hero image/header image
     .hero {
       width: 100%;
+      height: 100%;
     }
-    text-align: center;
-    // background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat center
-    //   center/cover;
-    min-height: 100%;
-    // background-attachment: fixed;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
 
     img {
       width: 100%;
     }
 
+    // hero-text
     .header-content {
-      min-width: 70%;
-      margin: 40% 0 0 1.5rem;
+      position: absolute;
+      top: 35%;
+      left: 10%;
       text-align: left;
       font-size: 1.3rem;
-
-      div {
-        position: relative;
-        top: 5rem;
-        border-left: 0.5rem solid red;
-        padding-left: 1rem;
-      }
     }
   }
 }
 
 //
-
-// @media (min-width: 768px) {
-//   .lead {
-//     font-size: 3rem;
-//   }
-//   .tagline {
-//     font-size: 2rem;
-//   }
-// }
 
 //  LANDSCAPE: width > height
 

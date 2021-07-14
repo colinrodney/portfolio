@@ -144,8 +144,11 @@ nav {
     text-align: center; }
   #header-home {
     text-align: center;
-    background: url("https://source.unsplash.com/Q1p7bh3SHj8") no-repeat center center/cover;
     min-height: 100%; }
+    #header-home .hero {
+      width: 100%; }
+    #header-home img {
+      width: 100%; }
     #header-home .header-content {
       min-width: 70%;
       margin: 40% 0 0 1.5rem;
@@ -169,6 +172,9 @@ nav {
 @media (min-width: 768px) {
   #header-home .header-content div {
     top: 5rem; } }
+
+.hero {
+  width: 100%; }
 
 .lead {
   margin: 0 0 2rem 0;

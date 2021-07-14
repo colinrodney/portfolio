@@ -1,94 +1,91 @@
-header {
-  text-align: center;
-}
+// header {
+//   text-align: center;
+// }
 // id about
-#about {
-  // push about section down from nav bar
-  margin: 1.5rem;
+// #about {
+//   // push about section down from nav bar
+//   margin: 1.5rem;
 
-  .container {
-    display: grid;
-    grid-template-columns: auto; //--- starts @ larger screen size...
-    grid-gap: 1.5rem;
-    margin: auto;
-    overflow: hidden;
+//   .container {
+//     display: grid;
+//     grid-template-columns: auto; //--- starts @ larger screen size...
+//     grid-gap: 1.5rem;
+//     margin: auto;
+//     overflow: hidden;
 
-    img {
-      max-width: 100%;
-    }
+//     img {
+//       max-width: 100%;
+//     }
 
-    #info {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: center;
-      line-height: 1.5;
+//     #info {
+//       display: flex;
+//       flex-wrap: wrap;
+//       flex-direction: column;
+//       justify-content: center;
+//       line-height: 1.5;
 
-      p {
-        margin-bottom: 1.5rem;
-      }
-    }
-  }
-}
+//       p {
+//         margin-bottom: 1.5rem;
+//       }
+//     }
+//   }
+// }
 
-// specialty section
-#specialty {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  background: rgba(255, 255, 255, 0.5);
-  color: #fff;
-  height: auto;
-  width: 100%;
-  padding: 1.5rem;
+// // specialty section
+// #specialty {
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   grid-template-rows: auto;
+//   background: rgba(255, 255, 255, 0.5);
+//   color: #fff;
+//   height: auto;
+//   width: 100%;
+//   padding: 1.5rem;
 
-  .border-bottom-short {
-    margin: 0 auto 1rem; //top left/right bottom
-  }
+//   .border-bottom-short {
+//     margin: 0 auto 1rem; //top left/right bottom
+//   }
 
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 4rem;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    margin: 1.5rem auto; // added margin to specialty container area
-    text-align: center;
+//   .container {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: auto;
+//     grid-gap: 4rem;
+//     height: auto;
+//     width: 100%;
+//     overflow: hidden;
+//     margin: 1.5rem auto; // added margin to specialty container area
+//     text-align: center;
 
-    .specialtyItems {
-      i {
-        display: block;
-        text-align: center;
-      }
-    }
-  }
-}
+//     .specialtyItems {
+//       i {
+//         display: block;
+//         text-align: center;
+//       }
+//     }
+//   }
+// }
 
-// MEDIA QUERIES
-@media (min-width: 768px) {
-  #about {
-    // push about section down from nav bar
-    // margin: 12rem 2rem;
+// // MEDIA QUERIES
+// @media (min-width: 768px) {
+//   #about {
+//     .container {
+//       //creates 2 column grid layout @ 768px + larger
+//       grid-template-columns: 50% auto;
+//     }
+//   }
 
-    .container {
-      //creates 2 column grid layout
-      grid-template-columns: 50% auto;
-    }
-  }
+//   #specialty {
+//     .container {
+//       // creates multi column layout @ 768px + larger
+//       grid-template-columns: repeat(4, 1fr);
 
-  #specialty {
-    .container {
-      // creates multi column layout
-      grid-template-columns: repeat(4, 1fr);
-
-      .specialtyItems {
-        i {
-          display: block;
-          text-align: center;
-        }
-      }
-    }
-  }
-}
+//       .specialtyItems {
+//         i {
+//           display: block;
+//           text-align: center;
+//         }
+//       }
+//     }
+//   }
+// }
